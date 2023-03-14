@@ -1,0 +1,87 @@
+:root {
+    --dark1: black;
+    --dark2: rgb(22, 22, 22);
+    --dark3: rgb(30, 30, 30);
+    --dark4: rgb(45, 45, 45);
+
+    --light1: white;
+    --light2: rgb(190, 190, 190);
+    --light3: rgb(153, 153, 153);
+
+    --orange: rgb(0, 225, 255);
+    --orange2: rgb(87, 232, 252);
+}
+
+.login-box {
+    position: relative;
+    right: 100px;
+    top: 50px;
+    margin: 0 auto;
+    width: 400px;
+    padding: 40px;
+    background: var(--dark3);
+    box-sizing: border-box;
+    box-shadow: 0px 5px 5px var(--dark1);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: var(--light1);
+    text-align: center;
+    font-weight: 800;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0px 5px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--light1);
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid var(--light1);
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--light1);
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: var(--light2);
+    font-size: 12px;
+}
+
+.user-box button {
+    margin-top: 10px;
+    margin-left: 110px;
+}
+
+.smalltext {
+    text-align: center;
+}
+.smalltext a {
+    font-size: 14px;
+    color: var(--light2);
+    text-decoration: underline 1px solid var(--light2);
+}
+.smalltext a:hover {
+    color: var(--light1);
+}

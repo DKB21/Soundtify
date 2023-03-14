@@ -1,0 +1,145 @@
+:root {
+    --dark1: black;
+    --dark2: rgb(22, 22, 22);
+    --dark3: rgb(30, 30, 30);
+    --dark4: rgb(45, 45, 45);
+
+    --light1: white;
+    --light2: rgb(190, 190, 190);
+    --light3: rgb(153, 153, 153);
+
+    --orange: rgb(0, 225, 255);
+    --orange2: rgb(87, 232, 252);
+}
+
+
+.musicbar {
+    background-color: var(--dark3);
+    border: 0.5px solid var(--dark4);
+    border-radius: 5px;
+    width: 1100px;
+    display: flex;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.musicbar-img {
+    height: 300px;
+    width: 300px;
+}
+
+.musicbar-playbutton {
+    margin-left: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+    height: 70px;
+}
+.musicbar-playbutton-forward {
+    color: var(--dark1);
+    position: relative;
+    left: 35%;
+    z-index: 2;
+    top: 20px;
+    width: 20px;
+}
+.musicbar-playbutton-circle {
+    color: var(--orange);
+    position: relative;
+    bottom: 30px;
+}
+.musicbar-playbutton:hover .musicbar-playbutton-circle {
+    color: var(--orange2);
+}
+.musicbar-playbutton:hover .musicbar-playbutton-forward {
+    color: var(--dark3);
+}
+
+.musicbar-info {
+    margin: 18px 15px;
+}
+.musicbar-info-title {
+    font-size: 22px;
+    width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.musicbar-info-artist {
+    font-size: 16px;
+}
+.musicbar-info-artist a {
+    color: var(--light2);
+}
+.musicbar-info-artist a:hover {
+    color: var(--light1);
+    text-decoration: underline;
+}
+
+.musicbar-info-waveform {
+    z-index: 5;
+    position: relative;
+    right: 70px;
+    top: 120px;
+    width: 650px;
+}
+
+.musicbar-info-nexticon {
+    position: relative;
+    width: 15px;
+    left: 442px;
+    bottom: 109px;
+    cursor: pointer;
+}
+.musicbar-info-nexticon i {
+    color: var(--light2);
+}
+.musicbar-info-nexticon i:hover {
+    color: var(--light1);
+}
+
+.musicbar-info-likeicon {
+    position: relative;
+    left: 480px;
+    bottom: 131px;
+    width: 25px;
+}
+.musicbar-info-likeicon i {
+    color: var(--light2);
+    cursor: pointer;
+}
+.musicbar-info-likeicon i:hover {
+    color: var(--light1);
+}
+.changecolor i {
+    color: var(--orange);
+}
+.changecolor i:hover {
+    color: var(--orange);
+}
+
+.musicbar-info-downicon {
+    position: relative;
+    bottom: 153px;
+    left: 524px;
+    width: 25px;
+}
+.musicbar-info-downicon i {
+    color: var(--light2);
+}
+.musicbar-info-downicon i:hover {
+    color: var(--light1);
+}
+
+.musicbar-info-volumnicon {
+    position: relative;
+    bottom: 175px;
+    left: 567px;
+    width: 25px;
+}
+.musicbar-info-volumnicon i {
+    color: var(--light2);
+    cursor: pointer;
+}
+.musicbar-info-volumnicon i:hover {
+    color: var(--light1);
+}
