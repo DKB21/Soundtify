@@ -1,4 +1,4 @@
-This is my raw PHP, HTML, CSS and JavaScript university project named Soundtify :)
+This is my raw PHP, HTML, CSS and JavaScript university project named Soundtify
 
 There is few steps to run this website locally:
 - Install XAMPP, start the Apache and MySQL module.
